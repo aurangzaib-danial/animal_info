@@ -1,4 +1,4 @@
-class AnimalScraper
+class AnimalInfo::Scraper
   def self.scrape_from_wikipedia(name)
     html = get_html(name)
     animal_name = html.search("h1#firstHeading").text

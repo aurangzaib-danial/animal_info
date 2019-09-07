@@ -1,4 +1,4 @@
-class Controller
+class AnimalInfo::Controller
   def call
     puts "Welcome to Animal Information Program\n\n"
     puts "Please enter the name of an animal and please spell it correctly!"
@@ -10,7 +10,7 @@ class Controller
 
   def display_information
     begin
-      animal = Animal.new_from_wikipedia(@animal_name)
+      animal = AnimalInfo::Animal.new_from_wikipedia(@animal_name)
       if animal.kingdom || animal.phylum || animal.klass || animal.order
         puts
         puts "Name: #{animal.name}"

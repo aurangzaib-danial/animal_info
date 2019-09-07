@@ -6,3 +6,5 @@ module AnimalInfo
 end
 
 require_relative 'animal.rb'
+require_relative 'scraper.rb'
+require_relative 'controller.rb'

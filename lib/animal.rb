@@ -1,10 +1,10 @@
-class Animal
+class AnimalInfo::Animal
   attr_accessor :name, :kingdom, :phylum, :klass, :order
 
   def self.new_from_wikipedia(name)
-    properties = AnimalScraper.scrape_from_wikipedia(normalize_name(name))
+    properties = AnimalInfo::Scraper.scrape_from_wikipedia(normalize_name(name))
 
-    Animal.new.tap do |animal|
+    new.tap do |animal|
       properties.each do |property,value|
         animal.send("#{property}=", value)
       end
