@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["aurangzaib.danial@gmail.com"]
 
   spec.summary       = "command line tool for finding info about an animal by scraping wikipedia"
-  spec.description   = "find animal info and may be open it in browser"
+  spec.description   = "find animal info"
   spec.homepage      = "https://github.com/aurangzaib-danial/animal_info"
   spec.license       = "MIT"
 

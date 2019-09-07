@@ -23,6 +23,7 @@ class AnimalInfo::Scraper
         end
       end
     end
+    properties[:url] = "https://en.wikipedia.org/wiki/#{name}"
     properties
   end
 

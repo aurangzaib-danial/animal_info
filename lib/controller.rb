@@ -1,14 +1,13 @@
 class AnimalInfo::Controller
-  def call
-    puts "Welcome to Animal Information Program\n\n"
-    puts "Please enter the name of an animal and please spell it correctly!"
+  attr_reader :animal_name
 
-    @animal_name = gets.strip
-
-    display_information if @animal_name != ""
+  def initialize(animal_name)
+    @animal_name = animal_name
+    display_information
   end
 
   def display_information
+    puts "Please wait while we fetch info for you!"
     begin
       animal = AnimalInfo::Animal.new_from_wikipedia(@animal_name)
       if animal.kingdom || animal.phylum || animal.klass || animal.order
@@ -18,6 +17,7 @@ class AnimalInfo::Controller
         puts "Phylum: #{animal.phylum}"
         puts "Class: #{animal.klass}"
         puts "Order: #{animal.order}"
+        puts "Source: #{animal.url}"
       else
         puts "Not Found!"
       end
