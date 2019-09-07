@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     animal_info (0.1.0)
-      nokogiri
+      nokogiri (~> 1.10.0)
 
 GEM
   remote: https://rubygems.org/
