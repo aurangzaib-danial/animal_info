@@ -1,6 +1,6 @@
 describe AnimalInfo::Animal do
 
-  it ".new_from_wikipedia returns a object with properties of bat" do
+  it ".new_from_wikipedia returns an object with properties of bat" do
     bat = AnimalInfo::Animal.new_from_wikipedia("bat")
     expect(bat.name).to eq("Bat")
     expect(bat.kingdom).to eq("Animalia")
@@ -9,7 +9,7 @@ describe AnimalInfo::Animal do
     expect(bat.order).to eq("Chiroptera")
   end
 
-  it ".new_from_wikipedia returns a object with properties of hippopotamus" do
+  it ".new_from_wikipedia returns an object with properties of hippopotamus" do
     hippopotamus = AnimalInfo::Animal.new_from_wikipedia("hippopotamus")
     expect(hippopotamus.name).to eq("Hippopotamus")
     expect(hippopotamus.kingdom).to eq("Animalia")
@@ -18,7 +18,7 @@ describe AnimalInfo::Animal do
     expect(hippopotamus.order).to eq("Artiodactyla")
   end
 
-  it ".new_from_wikipedia returns a object with properties of lizard" do
+  it ".new_from_wikipedia returns an object with properties of lizard" do
     lizard = AnimalInfo::Animal.new_from_wikipedia("lizard")
     expect(lizard.name).to eq("Lizard")
     expect(lizard.kingdom).to eq("Animalia")
@@ -27,7 +27,7 @@ describe AnimalInfo::Animal do
     expect(lizard.order).to eq("Squamata")
   end
 
-  it ".new_from_wikipedia returns a object with properties of African darter" do
+  it ".new_from_wikipedia returns an object with properties of African darter" do
     african_darter = AnimalInfo::Animal.new_from_wikipedia("African Darter")
     expect(african_darter.name).to eq("African darter")
     expect(african_darter.kingdom).to eq("Animalia")
